@@ -1,7 +1,7 @@
-.div-set-bg{
-	border:1px solid #252525;
+.div-set-bg-center{
+	padding: 2px;
 	padding:1em 2em;
 	display: inline-block;
 	margin: unset;
-	color: #252525;
+	color: #ffffff;
 }

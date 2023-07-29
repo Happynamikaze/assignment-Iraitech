@@ -4,6 +4,26 @@
 	border: 1px solid black;
 	
 }
-.set-box{
+.set-boxt{
 	display: inline-block;
+
+}
+.set-boxb{
+	display: inline-block;
+
+
+}
+.top-div-set{
+	display:flex ;
+	justify-content: space-between;
+}
+.bottom-div-set{
+	
+	display:flex ;
+	justify-content: space-between;
+}
+.center-align{
+	display: flex;
+	align-items: center;
+    flex-direction: column;
 }

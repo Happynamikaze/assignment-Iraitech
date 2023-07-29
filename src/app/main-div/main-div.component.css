@@ -1,0 +1,9 @@
+.main-div-set{
+	width: 50%;
+	margin: auto;
+	border: 1px solid black;
+	
+}
+.set-box{
+	display: inline-block;
+}

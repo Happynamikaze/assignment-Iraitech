@@ -1,0 +1,17 @@
+
+<div>
+	<button (click)="addXComponent()">Add Component X</button>
+	<div *ngFor="let xItem of xComponents; let xIndex = index" class="x-item">
+	  <h3>
+		<label for="xitem">Enter the index:</label>
+		<input  [(ngModel)]="xItem.name" (blur)="saveXComponent(xItem)" id="xitem" />
+	  </h3>
+	  <button (click)="addYComponent(xIndex)">+</button>
+	  <div *ngFor="let yItem of xItem.yComponents" class="y-item">
+		<label for="yitem">Enter the index:</label>
+		<input [(ngModel)]="yItem.text" id="yitem" />
+		<button (click)="saveYComponent(yItem)">Save</button>
+	  </div>
+	</div>
+  </div>
+  

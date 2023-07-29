@@ -1,0 +1,13 @@
+<div>
+	<label for="indexInput">Enter the index:</label>
+	<input type="number" id="indexInput" [(ngModel)]="index" min="0" max="{{ series.length - 1 }}" />
+	<button (click)="onCalculateClicked()">Show Number</button>
+  
+	<div *ngIf="result !== undefined">
+	  The number at index {{ index }} is {{ result }}.
+	</div>
+	<div *ngIf="result === undefined">
+	  Please enter a valid index.
+	</div>
+  </div>
+  

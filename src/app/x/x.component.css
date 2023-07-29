@@ -1,0 +1,36 @@
+/* x.component.css */
+:host {
+	display: block;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+  }
+  
+  .x-item {
+	margin-bottom: 15px;
+  }
+  
+  .x-item h3 {
+	margin: 0;
+  }
+  
+  .x-item button {
+	margin-left: 10px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+  }
+  
+  .y-item {
+	margin-top: 10px;
+  }
+  
+  .y-item input,
+  .y-item button {
+	margin-right: 10px;
+  }
+  

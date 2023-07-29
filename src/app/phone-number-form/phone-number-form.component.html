@@ -1,0 +1,11 @@
+<!-- phone-number-form.component.html -->
+<form #phoneNumberForm="ngForm" (ngSubmit)="onSubmit()">
+	<div *ngFor="let phoneNumber of phoneNumbers; let i = index" class="phone-number-input">
+	  <label for="phone-number">Phone Number {{ i + 1 }}  </label>
+	  <input type="text" id="phone-number" name="phoneNumber{{ i }}" [(ngModel)]="phoneNumbers[i]" required>
+	  <button *ngIf="phoneNumbers.length > 1" (click)="removePhoneNumber(i)">Delete</button>
+	</div>
+	<button type="button" (click)="addPhoneNumber()">Add another phone number</button>
+	<button type="submit">Submit</button>
+  </form>
+  
